@@ -1,0 +1,74 @@
+<!-- Resources page: An educational website about guinea pigs and how to treat them as pets. -->
+<!DOCTYPE html>
+
+<link rel="icon" href="images/webicon.png">
+
+<html lang="en">
+  <head>
+    <!-- Bootstrap link -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Stylesheet link -->
+    <link href="styles.css" rel="stylesheet">
+    <title>Aphex Twin for Noobs | Resources</title>
+    <script>
+    // Play a clip of a guinea pig squeaking when a user clicks the gpig button in the nav-bar.
+    // Audio code learned about here: https://stackoverflow.com/questions/18826147/javascript-audio-play-on-click
+    function play_sound(url) {
+      new Audio(url).play();
+    }
+    </script>
+  </head>
+  <body>
+    <!-- Navigation bar for Aphex Twin for Noobs -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="index.html"><b>Aphex Twin for Noobs</b></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="earlylife.html">Early life</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="career.html">Career</a>
+          <li class="nav-item">
+            <a class="nav-link" href="influences.html">Musical influences</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="resources.html">Resources</a>
+          </li>
+        </ul>
+        <!-- audio clip of aphex  -->
+        <button onclick="play_sound('sounds/brup.mp3')" type="button" class="btn btn-outline-info"><img src="images/aphexmini.png" alt="Image" width="30"></button>
+      </div>
+    </nav>
+
+    <!-- Resources Content -->
+    <h1>Resources</h1>
+    <hr class="solid">
+    <img class="indent" src="images/tank.jpg" alt="tank" width="450" style="border: 2px solid grey;
+                 border-radius: 8px;">
+    <h6 class="indent" style="margin-top: 15px"><em>"Did you know that Richard also owned a tank?"</em><br><br></h6>
+
+    <p>Sources used:</p>
+    <ul class="indent" style="padding-bottom: 30px">
+      <li><a target="_blank" href="https://www.aphextwin.nu/visuals/">Images sourced from here</a></li>
+      <li><a target="_blank" href="https://www.aphextwin.nu/learn/98770881649888.shtml">Information for his early life was sourced from here</a></li>
+      <li><a target="_blank" href="https://crackmagazine.net/article/long-reads/aphex-twins-mask-collapses/">Interview with Aphex</a></li>
+      </ul>
+
+      <p>Along with the videos and links on the other pages, you can find more information below:</p>
+        <ul class="indent" style="padding-bottom: 30px">
+          <li><a target="_blank" href="https://en.wikipedia.org/wiki/Aphex_Twin">Aphex Twin's Wikipedia</a></li>
+          <li><a target="_blank" href="https://www.reddit.com/r/aphextwin/">A great forum for discussing Aphex Twin</a></li>
+          <li><a target="_blank" href="https://www.aphextwin.nu/">A another great site about Aphex Twin</a></li>
+
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>
