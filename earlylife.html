@@ -1,90 +1,86 @@
-<!-- Earlylife -->
 <!DOCTYPE html>
-
-<link rel="icon" href="images/webicon.png">
-
 <html lang="en">
-  <head>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="images/webicon.png">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <title>Aphex Twin for Noobs | Earlylife</title>
     <script>
-    // Play a clip of aphex win synths.
-    // Audio code learned about here: https://stackoverflow.com/questions/18826147/javascript-audio-play-on-click
-    function play_sound(url) {
-      new Audio(url).play();
-    }
+        function play_sound(url) {
+            new Audio(url).play();
+        }
     </script>
-  </head>
-  <body>
-    <!-- Navigation bar -->
+</head>
+<body>
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="index.html"><b>Aphex Twin for Noobs</b></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="earlylife.html">Early life</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="career.html">Career</a>
-          <li class="nav-item">
-            <a class="nav-link" href="influences.html">Musical influences</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="resources.html">Resources</a>
-          </li>
-        </ul>
-        <!-- audio clip of aphex  -->
-        <button onclick="play_sound('sounds/brup.mp3')" type="button" class="btn btn-outline-info"><img src="images/aphexmini.png" alt="Image of aphex face" width="30"></button>
-      </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand font-weight-bold" href="index.html">Aphex Twin for Noobs</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="earlylife.html">Early life</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="career.html">Career</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="influences.html">Musical influences</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="resources.html">Resources</a>
+                </li>
+            </ul>
+            <button onclick="play_sound('sounds/brup.mp3')" type="button" class="btn btn-outline-info"><img src="images/aphexmini.png" alt="Image of aphex face" width="30"></button>
+        </div>
     </nav>
-  <sp></sp>
 
-    <!-- Earlylifeal Content -->
-    <h1>An Introduction To The Music Of Aphex Twin</h1>
-    <!-- Personality section -->
-    <h4>1971</h4>
-    <hr class="solid">
-    <p>
-      Richard D. James was born on August 18, 1971, in Cornwall, England. As a child, Richard was fascinated
-      with sound. Fascinated in a way that most musical prodigies aren't, or as he may come to represent a
-      new precedent, didn't used to be. He wasn't only interested in the standard definition
-      of music per se(i.e. harmonies, melodies, conventional structures, etc.), but also in the otherworldy textures possible to create through technology.
-    <p>
-      Experimenting with computers, sequencers, keyboards and reel-to-reel tape, he was inventing his own synthesizers by the age of thirteen,
-      and recording his own material by, at most, the age of fourteen, if not sooner. Throughout his teens, he created hundreds of electronic works, purely for his own pleasure.
-      As he grew, he held several menial jobs, including ditch digging.
-    <p>
-      But he no doubt kept the dream alive that he would one day be a professional musician.
-      And indeed, he had begun to D.J. in his home town, garnering serious attention.
-    </p>
-    <img class ="indent_img" src="images/aphexdj.jpg" alt="aphex dj" width="315">
-    <!-- Resources section -->
-    <h4>Resources</h4>
-    <hr class="solid">
-    <p>
-      Here are some great resources that shine more light on Aphex's past:
-    </p>
-    <ul style="padding-bottom: 30px">
-      <li class="indent"><a target="_blank" href="https://en.wikipedia.org/wiki/Aphex_Twin">Aphex Twin, Wikipedia</a></li>
+    <div class="container mt-4">
+        <h1>An Introduction To The Music Of Aphex Twin</h1>
+        <h4 class="mt-3 mb-4">1971</h4>
+        <hr class="solid">
+        <p class="pb-3">
+            Richard D. James was born on August 18, 1971, in Cornwall, England. As a child, Richard was fascinated
+            with sound. Fascinated in a way that most musical prodigies aren't, or as he may come to represent a
+            new precedent, didn't used to be. He wasn't only interested in the standard definition
+            of music per se(i.e. harmonies, melodies, conventional structures, etc.), but also in the otherworldly textures possible to create through technology.
+        </p>
+        <p class="pb-3">
+            Experimenting with computers, sequencers, keyboards and reel-to-reel tape, he was inventing his own synthesizers by the age of thirteen,
+            and recording his own material by, at most, the age of fourteen, if not sooner. Throughout his teens, he created hundreds of electronic works, purely for his own pleasure.
+            As he grew, he held several menial jobs, including ditch digging.
+        </p>
+        <p class="pb-3">
+            But he no doubt kept the dream alive that he would one day be a professional musician.
+            And indeed, he had begun to D.J. in his home town, garnering serious attention.
+        </p>
+        <img class="indent_img img-fluid" src="images/aphexdj.jpg" alt="aphex dj">
+        <h4 class="mt-4">Resources</h4>
+        <hr class="solid">
+        <p>
+            Here are some great resources that shine more light on Aphex's past:
+        </p>
+        <ul style="padding-bottom: 30px">
+            <li class="indent"><a target="_blank" href="https://en.wikipedia.org/wiki/Aphex_Twin">Aphex Twin, Wikipedia</a></li>
+            <li class="indent">How Aphex Twin Spurned the 90s Dance Mainstream ("Windowlicker") | New British Canon:
+                <iframe style="margin-bottom: 20px; margin-top: 20px;" src="https://www.youtube.com/embed/SOUvcVc14L4?si=jAhXyFqqURv-bNyV" height="300" width="100%" title="aphex twin"></iframe>
+            </li>
+            <li class="indent">Aphex Twin - 1996 MTV Party Zone Interview with Simone Angel:
+                <iframe style="margin-bottom: 20px; margin-top: 20px;" src="https://www.youtube.com/embed/rndV_5q8Tkc?si=UkbIlG5ss84wE0ol" height="300" width="100%" title="aphex twin"></iframe>
+            </li>
+            <li class="indent">Aphex Twin - MTV News feature, late 1993/early 1994:
+                <iframe style="margin-top: 20px;" src="https://www.youtube.com/embed/wnpXC7w_2bE?si=pHHHawDjNWMHebDs" height="300" width="100%" title="Bad Guinea Pig Treatment"></iframe>
+            </li>
+        </ul>
+    </div>
 
-      <li class="indent">How Aphex Twin Spurned the 90s Dance Mainstream ("Windowlicker") | New British Canon:
-        <iframe style="margin-bottom: 20px; margin-top: 20px;" src="https://www.youtube.com/embed/SOUvcVc14L4?si=jAhXyFqqURv-bNyV" height="300" width="600" title="aphex twin"></iframe>
-      </li>
-
-      <li class="indent">Aphex Twin - 1996 MTV Party Zone Interview with Simone Angel:
-        <iframe style="margin-bottom: 20px; margin-top: 20px;" src="https://www.youtube.com/embed/rndV_5q8Tkc?si=UkbIlG5ss84wE0ol" height="300" width="600" title="aphex twin"></iframe>
-      </li>
-
-      <li class="indent">Aphex Twin - MTV News feature, late 1993/early 1994:
-        <iframe style="margin-top: 20px;" src="https://www.youtube.com/embed/wnpXC7w_2bE?si=pHHHawDjNWMHebDs" height="300" width="600" title="Bad Guinea Pig Treatment"></iframe>
-      </li>
-    </ul>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
 </html>

@@ -1,56 +1,69 @@
 /* Stylesheet for Aphex Twin for Noobs! website. */
+
 /* General indentation. */
-.indent
-{
-    margin-left: 200pt;
-    margin-right: 200pt;
-    padding-bottom: 0px;
-    padding-right: 0px;
-    border-radius: 0px;
+.indent, h1, h4, p, .indent_img, hr.solid {
+    margin-left: 5%;
+    margin-right: 5%;
 }
-h1
-{
-    margin-left: 200pt;
-    padding-top: 20px;
-    padding-bottom: 0px;
-    padding-right: 0px;
-    border-radius: 0px;
+
+img.indent_img {
+    width: 30%;
 }
-h4
-{
-    margin-left: 200pt;
-    padding-top: 10px;
-    padding-bottom: 0px;
-    padding-right: 0px;
-    border-radius: 0px;
-}
-p
-{
-    margin-left: 200pt;
-    margin-right: 200pt;
-    padding-bottom: 0px;
-    padding-right: 0px;
-    border-radius: 0px;
-}
-/* Indents an image. */
-.indent_img
-{
-    margin-top: 20px;
-    margin-left: 200pt;
-    margin-right: 200pt;
-    border: 2px solid grey;
-    border-radius: 8px;
-}
-body
-{
+
+body {
+    font-size: 16px;
     color: silver;
     background-color: black;
 }
+
+h1 {
+    font-size: 2em;
+    margin-left: 5%;
+}
+
+h4 {
+    font-size: 1.5em;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+/* Indents an image. */
+.indent_img {
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: 2px solid grey;
+    border-radius: 8px;
+}
+
 /* Solid border. */
-hr.solid
-{
-    margin-left: 200pt;
-    margin-right: 200pt;
+hr.solid {
+    margin-left: 5%;
+    margin-right: 5%;
     border-top: 3px solid #C0C0C0;
     border-radius: 5px;
+}
+
+/* Media Query for smaller screens */
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    h4 {
+        font-size: 1.2em;
+    }
+
+    .indent, h1, h4, p, .indent_img, hr.solid {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    img.indent_img {
+        width: 100%;
+    }
 }

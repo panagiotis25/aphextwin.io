@@ -1,63 +1,60 @@
-<!-- Main page -->
 <!DOCTYPE html>
-
-<link rel="icon" href="images/webicon.png">
 <html lang="en">
-  <head>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" href="images/webicon.png">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
     <title>Aphex Twin For Noobs | Home</title>
     <script>
-    // Play a clip of a guinea pig squeaking when a user clicks the gpig button in the nav-bar.
-    // Audio code learned about here: https://stackoverflow.com/questions/18826147/javascript-audio-play-on-click
-    function play_sound(url) {
-      new Audio(url).play();
-    }
+        function play_sound(url) {
+            new Audio(url).play();
+        }
     </script>
-  </head>
-  <body>
-    <!-- Navigation bar for Aphex Twin for Noobs -->
+</head>
+<body>
     <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="index.html"><b>Aphex Twin for Noobs</b></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="earlylife.html">Early life</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="career.html">Career</a>
-          <li class="nav-item">
-            <a class="nav-link" href="influences.html">Musical influences</a>
-          </li>
-            <li class="nav-item">
-            <a class="nav-link" href="resources.html">Resources</a>
-          </li>
-
-
-        </ul>
-        <!-- audio clip of aphex  -->
-        <button onclick="play_sound('sounds/brup.mp3')" type="button" class="btn btn-outline-info"><img src="images/aphexmini.png" alt="Image" width="30"></button>
-      </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand font-weight-bold" href="index.html">Aphex Twin for Noobs</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="earlylife.html">Early life</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="career.html">Career</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="influences.html">Musical influences</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="resources.html">Resources</a>
+                </li>
+            </ul>
+            <button onclick="play_sound('sounds/brup.mp3')" type="button" class="btn btn-outline-info"><img src="images/aphexmini.png" alt="Image" width="30"></button>
+        </div>
     </nav>
 
-    <!-- Homepage content -->
-    <h1 style= "margin-left: 200pt;">Welcome to Aphex Twin for Noobs!</h1>
-    <h4 class="indent" style="margin-top: 25px; margin-bottom: 20px;">About Aphex Twin for Noobs</h4>
-    <hr class="solid">
-    <p class="indent" style="padding-bottom: 30px">
-      If you're here, you've probably heard of Aphex Twin
-      or you're already a fan looking to learn more about his life and his music.<br><br>
+    <div class="container mt-4">
+        <h1 class="ml-md-4">Welcome to Aphex Twin for Noobs!</h1>
+        <h4 class="indent mt-3 mb-4">About Aphex Twin for Noobs</h4>
+        <hr class="solid">
+        <p class="indent pb-3">
+            If you're here, you've probably heard of Aphex Twin or you're already a fan looking to learn more about his life and his music.
+            <br><br>
+            One thing to note though is that Aphex Twin loves to lie about his past.
+            <em>But</em> in this biography, I will try my best to clear the air a bit around him.
+        </p>
+        <img class="indent_img img-fluid" src="images/aphexmain.jpg" alt="aphex">
+    </div>
 
-      One thing to note thought is that Aphex Twin loves to lie about his past.
-       <em>But</em> in this biography i will try my best to clear the air a bit around him.
-    </p>
-    <img class ="indent_img" src="images/aphexmain.jpg" alt="aphex" width="615">
-  </p>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
 </html>
